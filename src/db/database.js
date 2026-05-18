@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 const logger = require('../utils/logger');
 
-const DB_PATH = const DB_PATH = process.env.DB_PATH || '/tmp/bot.db';
+const DB_PATH = process.env.DB_PATH || '/tmp/bot.db';
 
 // Ensure data directory exists
 const dir = path.dirname(DB_PATH);

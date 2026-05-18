@@ -209,6 +209,8 @@ const feeQueries = {
   getTotalFees: db.prepare(`SELECT SUM(amount) as total FROM platform_fees`)
 };
 
+initDatabase();
+
 module.exports = {
   db,
   initDatabase,
